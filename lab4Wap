@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f8f6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: #f4edef;
+            border: 2px solid #06c91d;
+            width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #bfe7d9;
+        }
+        .header h1 {
+            font-size: 24px;
+            color: #333;
+            margin: 0;
+        }
+        .attention {
+            font-size: 16px;
+            margin: 10px 0;
+            padding: 10px;
+            color: #d35400;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .submit-reset {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Workshop Registration</h1>
+            <button class="more-actions">More Actions ▼</button>
+        </div>
+        <p class="attention">Register now while seats are available!</p>
+        <form>
+            <div class="form-group">
+                <label for="first-name">First Name*</label>
+                <input id="first-name" type="text" required>
+
+                <label for="last-name">Last Name*</label>
+                <input id="last-name" type="text" required>
+
+                <label for="company-institution">Company/Institution*</label>
+                <input id="company-institution" type="text" required>
+
+                <label for="address">Address*</label>
+                <textarea id="address" required></textarea>
+
+                <label for="city">City*</label>
+                <input id="city" type="text" required>
+
+                <label for="state-province-region">State/Province/Region</label>
+                <select id="states" required>
+                    <option>-Select-</option>
+                    <option>Texas</option>
+                    <option>Iowa</option>
+                    <option>New York</option>
+                    <option>Moscow</option>
+                    <option>Ontario</option>
+                    <option>Alberta</option>
+                </select>
+
+                <label for="country">Country*</label>
+                <select id="countries" required>
+                    <option>-Select-</option>
+                    <option>USA</option>
+                    <option>Canada</option>
+                    <option>Russia</option>
+                </select>
+
+                <label for="email">Email*</label>
+                <input id="email" type="email" required>
+
+                <label for="phone-number">Phone Number*</label>
+                <input id="phone-number" type="tel" required>
+            </div>
+            <div class="submit-reset">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
